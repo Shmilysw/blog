@@ -1,0 +1,1 @@
+export { default } from "D:\\shmilysw\\blog\\node_modules\\vuepress-plugin-redirect\\lib\\enhanceApp.js"

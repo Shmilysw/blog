@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>shell 基础语法 (bash) | Shmilysw</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/favicon.png">
+    <link rel="mask-icon" href="/icons/favicon.png" color="#3eaf7c">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta property="og:url" content="https://Shmilysw.github.io">
+    <meta property="og:site_name" content="Shmilysw&#39;s blog">
+    <meta property="og:description" content="Shmilysw&#39;s blog">
+    <meta property="og:title" content="Shmilysw&#39;s blog">
+    <meta name="theme-color" content="#222222">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/favicon.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.63b9f890.css" as="style"><link rel="preload" href="/assets/js/app.2303c9af.js" as="script"><link rel="preload" href="/assets/js/10.2eb9dcae.js" as="script"><link rel="preload" href="/assets/js/24.e12827b0.js" as="script"><link rel="prefetch" href="/assets/js/1.649eb50c.js"><link rel="prefetch" href="/assets/js/11.c306bdbc.js"><link rel="prefetch" href="/assets/js/12.a18c18e2.js"><link rel="prefetch" href="/assets/js/13.a0b74828.js"><link rel="prefetch" href="/assets/js/14.df2c0336.js"><link rel="prefetch" href="/assets/js/15.33a9ca3a.js"><link rel="prefetch" href="/assets/js/16.49141d36.js"><link rel="prefetch" href="/assets/js/17.103a2b84.js"><link rel="prefetch" href="/assets/js/18.ab9bf707.js"><link rel="prefetch" href="/assets/js/19.e219b438.js"><link rel="prefetch" href="/assets/js/20.0ba8db38.js"><link rel="prefetch" href="/assets/js/21.795f1460.js"><link rel="prefetch" href="/assets/js/22.3c158192.js"><link rel="prefetch" href="/assets/js/23.11e87bfe.js"><link rel="prefetch" href="/assets/js/25.6449a412.js"><link rel="prefetch" href="/assets/js/4.487e87bd.js"><link rel="prefetch" href="/assets/js/5.f68dee13.js"><link rel="prefetch" href="/assets/js/6.1caf79b8.js"><link rel="prefetch" href="/assets/js/7.7e45e971.js"><link rel="prefetch" href="/assets/js/8.f6435486.js"><link rel="prefetch" href="/assets/js/9.0c879297.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.af2762a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.63b9f890.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-meteorlxy"><header class="header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(https://s2.loli.net/2022/02/16/pa8cMOXlbjYABTI.png);" data-v-7a046aea><div data-v-e4145d0a data-v-7a046aea><nav class="navbar" data-v-e4145d0a><div class="container" data-v-e4145d0a><a href="/" class="router-link-active" data-v-e4145d0a><span class="navbar-site-name" data-v-e4145d0a>
+          Shmilysw
+        </span></a> <div class="navbar-toggler" data-v-e4145d0a><svg class="icon" style="font-size:1.2em;" data-v-e4145d0a data-v-e4145d0a><title data-v-e4145d0a data-v-e4145d0a>menu</title><use xlink:href="#icon-menu" data-v-e4145d0a data-v-e4145d0a></use></svg></div> <div class="navbar-links" data-v-e4145d0a><a href="/" class="navbar-link" data-v-e4145d0a>
+            Home
+          </a><a href="/posts/" class="navbar-link router-link-active" data-v-e4145d0a>
+            Posts
+          </a><a href="/about/" class="navbar-link" data-v-e4145d0a>
+            About
+          </a></div></div></nav> <div class="navbar-holder" style="display:none;" data-v-e4145d0a></div></div> <div class="banner" data-v-98d6aa8c data-v-7a046aea data-v-7a046aea><div class="container" data-v-98d6aa8c><div class="center" data-v-98d6aa8c><h1 data-v-98d6aa8c data-v-7a046aea>
+          shell 基础语法 (bash)
+        </h1></div></div></div></header> <div class="container clearfix show-aside" data-v-4dd605a1 data-v-4dd605a1><main class="main" data-v-4dd605a1><div class="post" data-v-4dd605a1 data-v-4dd605a1><section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
+      Created : 2023-04-29
+    </span> <!----></section> <section class="post-links" data-v-4e23451f><a href="/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html" class="post-link" data-v-4e23451f>
+      Previous Post : git-github的入门
+    </a> <!----></section></section> <article class="main-div"><div class="post-content content content__default"><h2 id="执行"><a href="#执行" class="header-anchor">#</a> 执行</h2> <p>新建一个  <code>test.sh</code>  脚本文件</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token shebang important">#! /bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;helloWorld!&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>#! /bin/bash</code>  前缀标识使用的 shell 语言</p> <p><code>ls -l test.sh</code>  查看文件权限，发现默认创建的 sh 文件</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">chmod</span> +x test.sh <span class="token comment"># 使脚本具有可执行权限</span>
+./test.sh   <span class="token comment">#在当前目录下执行写好的这个脚本</span>
+<span class="token comment"># 当然也可以在任意目录使用绝对路径进行脚本的执行</span>
+</code></pre></div><h3 id="用解释器执行"><a href="#用解释器执行" class="header-anchor">#</a> 用解释器执行：</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> test.sh
+</code></pre></div><h2 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h2> <p>每行的 # 之后的内容都是注释内容</p> <p>多行注释：<br>
+格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>:<span class="token operator">&lt;&lt;</span><span class="token string">EOF
+第一行注释
+第二行注释
+第三行注释
+EOF</span>
+</code></pre></div><p>其中 EOF 可以换成其它任意字符串。例如：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>:<span class="token operator">&lt;&lt;</span><span class="token string">abc
+第一行注释
+第二行注释
+第三行注释
+abc</span>
+:<span class="token operator">&lt;&lt;</span><span class="token operator">!</span>
+第一行注释
+第二行注释
+第三行注释
+<span class="token operator">!</span>
+</code></pre></div><h2 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h2> <h3 id="定义变量"><a href="#定义变量" class="header-anchor">#</a> 定义变量</h3> <p>定义变量，不需要加 <code>$</code>  符号，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>name1='fw'  # 单引号定义字符串
+name2=&quot;fw&quot;  # 双引号定义字符串
+name3=fw    # 也可以不加引号，同样表示字符串
+</code></pre></div><h3 id="使用变量"><a href="#使用变量" class="header-anchor">#</a> 使用变量</h3> <p>使用变量，需要加上 <code>$</code>  符号，或者 <code>${}</code>  符号。花括号是可选的，主要为了帮助解释器识别变量边界。一般使用变量的同时都加上那一个花括号</p> <div class="language- extra-class"><pre class="language-text"><code>name=fw
+echo $name  # 输出 fw
+echo ${name}  # 输出 fw
+echo ${name}hhh  # 输出 fwhhh
+</code></pre></div><h3 id="只读变量"><a href="#只读变量" class="header-anchor">#</a> 只读变量</h3> <p>使用  <code>readonly + 变量名</code>  或者  <code>declare -r + 变量名</code>  可以将变量变为只读。</p> <div class="language- extra-class"><pre class="language-text"><code>name=fw
+readonly name
+declare -r name  # 两种写法均可
+</code></pre></div><p>声明时候使用  <code>name=abc</code>   # 会报错，因为此时 name 只读</p> <h3 id="删除变量"><a href="#删除变量" class="header-anchor">#</a> 删除变量</h3> <p>unset 可以删除变量（删除变量的内容）</p> <div class="language- extra-class"><pre class="language-text"><code>name=fw
+unset name
+echo $name  # 输出空行
+</code></pre></div><h3 id="变量类型"><a href="#变量类型" class="header-anchor">#</a> 变量类型</h3> <p>自定义变量（局部变量）<br>
+子进程不能访问的变量<br>
+环境变量（全局变量）<br>
+子进程可以访问的变量</p> <p>自定义变量改成环境变量：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>$ <span class="token assign-left variable">name</span><span class="token operator">=</span>fw  <span class="token comment"># 定义变量</span>
+$ <span class="token builtin class-name">export</span> name  <span class="token comment"># 第一种方法</span>
+$ <span class="token builtin class-name">declare</span> -x name  <span class="token comment"># 第二种方法</span>
+</code></pre></div><p>环境变量改为自定义变量：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>$ <span class="token builtin class-name">export</span> <span class="token assign-left variable">name</span><span class="token operator">=</span>fw  <span class="token comment"># 定义环境变量</span>
+$ <span class="token builtin class-name">declare</span> +x name  <span class="token comment"># 改为自定义变量</span>
+</code></pre></div><h3 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h3> <p>字符串可以用单引号，也可以用双引号，也可以不用引号。</p> <p>单引号与双引号的区别：</p> <p>单引号中的内容会原样输出，不会执行、不会取变量；（习惯使用单引号，防止意外结果的表达）<br>
+双引号中的内容可以执行、可以取变量；</p> <p><code>name=fw # 不用引号</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">echo</span> <span class="token string">'hello, $name \&quot;hh\&quot;'</span>  <span class="token comment"># 单引号字符串，输出 hello, $name \&quot;hh\&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;hello, <span class="token variable">$name</span> <span class="token entity" title="\&quot;">\&quot;</span>hh<span class="token entity" title="\&quot;">\&quot;</span>&quot;</span>  <span class="token comment"># 双引号字符串，输出 hello, fw &quot;hh&quot;</span>
+</code></pre></div><h3 id="获取字符串长度"><a href="#获取字符串长度" class="header-anchor">#</a> 获取字符串长度</h3> <p><code>${#string}</code>  代表 string 的长度</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;fw&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${<span class="token operator">#</span>name}</span>  <span class="token comment"># 输出 2</span>
+提取子串
+<span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;hello, fw&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${name<span class="token operator">:</span>0<span class="token operator">:</span>5}</span>  <span class="token comment"># 提取从 0 开始的 5 个字符</span>
+</code></pre></div><h2 id="默认变量"><a href="#默认变量" class="header-anchor">#</a> 默认变量</h2> <p>文件参数变量<br>
+在执行 shell 脚本时，可以向脚本传递参数。 <code>$1</code>  是第一个参数， <code>$2</code>  是第二个参数，以此类推。特殊的， <code>$0</code>  是文件名（包含路径）（是一种很常见的参数写法）。例如：</p> <p>创建文件  <code>test.sh</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token shebang important">#! /bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;文件名：&quot;</span><span class="token variable">$0</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;第一个参数：&quot;</span><span class="token variable">$1</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;第二个参数：&quot;</span><span class="token variable">$2</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;第三个参数：&quot;</span><span class="token variable">$3</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;第四个参数：&quot;</span><span class="token variable">$4</span>
+</code></pre></div><p>然后执行该脚本：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">chmod</span> +x test.sh 
+./test.sh <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>文件名：./test.sh
+第一个参数：1
+第二个参数：2
+第三个参数：3
+第四个参数：4
+</code></pre></div><h3 id="其他参数相关的变量"><a href="#其他参数相关的变量" class="header-anchor">#</a> 其他参数相关的变量</h3> <p><img alt="20210903170646-2021-09-03-17-06-49" data-src="https://raw.githubusercontent.com/fengwei2002/Pictures_02/master/images/20210903170646-2021-09-03-17-06-49.png" loading="lazy" class="lazy"></p> <details class="showmore"><summary>SHOWMORE</summary> <p><img alt="其他参数相关的变量。png" data-src="https://cdn.acwing.com/media/article/image/2021/09/03/101476_236a312e0c-%E5%85%B6%E4%BB%96%E5%8F%82%E6%95%B0%E7%9B%B8%E5%85%B3%E7%9A%84%E5%8F%98%E9%87%8F%E3%80%82png" loading="lazy" class="lazy"></p></details> <h2 id="数组"><a href="#数组" class="header-anchor">#</a> 数组</h2> <p>数组中可以存放多个不同类型的值，只支持一维数组，初始化时不需要指明数组大小。<br>
+数组下标从 0 开始。</p> <h3 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h3> <p>数组用小括号表示，元素之间用空格隔开。例如：</p> <p><code>array=(1 abc &quot;def&quot; fw)</code></p> <p>也可以直接定义数组中某个元素的值：（C++ 写法）</p> <div class="language-sh extra-class"><pre class="language-sh"><code>array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span>
+array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>abc
+array<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">&quot;def&quot;</span>
+array<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">=</span>fw
+</code></pre></div><h3 id="读取数组中某个元素的值"><a href="#读取数组中某个元素的值" class="header-anchor">#</a> 读取数组中某个元素的值</h3> <p>格式：</p> <p><code>${array[index]}</code> <br>
+ 例如：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">array</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span> abc <span class="token string">&quot;def&quot;</span> fw<span class="token punctuation">)</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${array<span class="token punctuation">[</span>0<span class="token punctuation">]</span>}</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${array<span class="token punctuation">[</span>1<span class="token punctuation">]</span>}</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${array<span class="token punctuation">[</span>2<span class="token punctuation">]</span>}</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${array<span class="token punctuation">[</span>3<span class="token punctuation">]</span>}</span>
+</code></pre></div><h3 id="读取整个数组"><a href="#读取整个数组" class="header-anchor">#</a> 读取整个数组</h3> <p>格式：（一般使用  <code>array[*]</code> ）因为正则表达式中的通配符就是  <code>*</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token variable">${array<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第一种写法</span>
+<span class="token variable">${array<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第二种写法</span>
+</code></pre></div><p>例如：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">array</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span> abc <span class="token string">&quot;def&quot;</span> fw<span class="token punctuation">)</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${array<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第一种写法</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${array<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第二种写法</span>
+</code></pre></div><h3 id="读取数组长度"><a href="#读取数组长度" class="header-anchor">#</a> 读取数组长度</h3> <p>类似于字符串</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token variable">${<span class="token operator">#</span>array<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第一种写法</span>
+<span class="token variable">${<span class="token operator">#</span>array<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第二种写法</span>
+</code></pre></div><p>例如：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">array</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span> abc <span class="token string">&quot;def&quot;</span> fw<span class="token punctuation">)</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${<span class="token operator">#</span>array<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第一种写法</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${<span class="token operator">#</span>array<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>  <span class="token comment"># 第二种写法</span>
+</code></pre></div><h2 id="if-then-语句"><a href="#if-then-语句" class="header-anchor">#</a> if…then 语句</h2> <p>类似于 C/C++ 中的 if-else 语句。</p> <p>单层 if<br>
+ 命令格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">if</span> condition
+<span class="token keyword">then</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">fi</span>
+</code></pre></div><p>示例：</p> <p>a=3<br>
+b=4</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$a</span>&quot;</span> -lt <span class="token string">&quot;<span class="token variable">$b</span>&quot;</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$a</span>&quot;</span> -gt <span class="token number">2</span> <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>在范围内
+<span class="token keyword">fi</span>
+</code></pre></div><p>输出结果：</p> <p><code>3 在范围内</code></p> <h3 id="单层-if-else"><a href="#单层-if-else" class="header-anchor">#</a> 单层 if-else</h3> <p>命令格式</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">if</span> condition
+<span class="token keyword">then</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">else</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">fi</span>
+</code></pre></div><p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">3</span>
+<span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token keyword">if</span> <span class="token operator">!</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$a</span>&quot;</span> -lt <span class="token string">&quot;<span class="token variable">$b</span>&quot;</span> <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>不小于<span class="token variable">${b}</span>
+<span class="token keyword">else</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>小于<span class="token variable">${b}</span>
+<span class="token keyword">fi</span>
+</code></pre></div><p>输出结果：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token number">3</span> 小于 <span class="token number">4</span>
+</code></pre></div><h3 id="多层-if-elif-elif-else"><a href="#多层-if-elif-elif-else" class="header-anchor">#</a> 多层 if-elif-elif-else</h3> <p>命令格式</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">if</span> condition
+<span class="token keyword">then</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">elif</span> condition
+<span class="token keyword">then</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">elif</span> condition
+<span class="token keyword">then</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+<span class="token keyword">else</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">fi</span>
+</code></pre></div><p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$a</span> -eq <span class="token number">1</span> <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>等于 <span class="token number">1</span>
+<span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token variable">$a</span> -eq <span class="token number">2</span> <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>等于 <span class="token number">2</span>
+<span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token variable">$a</span> -eq <span class="token number">3</span> <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>等于 <span class="token number">3</span>
+<span class="token keyword">else</span>
+    <span class="token builtin class-name">echo</span> 其他
+<span class="token keyword">fi</span>
+</code></pre></div><p>输出结果：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>其他
+</code></pre></div><h3 id="case-esac-形式"><a href="#case-esac-形式" class="header-anchor">#</a> case…esac 形式</h3> <p>类似于 C/C++ 中的 switch 语句。</p> <p>命令格式</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">case</span> $变量名称 <span class="token keyword">in</span>
+    值 <span class="token number">1</span><span class="token punctuation">)</span>
+        语句 <span class="token number">1</span>
+        语句 <span class="token number">2</span>
+        <span class="token punctuation">..</span>.
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>  <span class="token comment"># 类似于 C/C++中的 break</span>
+    值 <span class="token number">2</span><span class="token punctuation">)</span>
+        语句 <span class="token number">1</span>
+        语句 <span class="token number">2</span>
+        <span class="token punctuation">..</span>.
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    *<span class="token punctuation">)</span>  <span class="token comment"># 类似于 C/C++中的 default</span>
+        语句 <span class="token number">1</span>
+        语句 <span class="token number">2</span>
+        <span class="token punctuation">..</span>.
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span>
+</code></pre></div><p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token keyword">case</span> <span class="token variable">$a</span> <span class="token keyword">in</span>
+    <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>等于 <span class="token number">1</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>  
+    <span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>等于 <span class="token number">2</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>  
+    <span class="token number">3</span><span class="token punctuation">)</span>                                                
+        <span class="token builtin class-name">echo</span> <span class="token variable">${a}</span>等于 <span class="token number">3</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>  
+    *<span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> 其他
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>  
+<span class="token keyword">esac</span>
+</code></pre></div><p>输出结果：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>其他
+</code></pre></div><h2 id="for-in-do-done"><a href="#for-in-do-done" class="header-anchor">#</a> for…in…do…done</h2> <p>命令格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token for-or-select variable">var</span> <span class="token keyword">in</span> val1 val2 val3
+<span class="token keyword">do</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">done</span>
+</code></pre></div><p>示例 1，输出 a 2 cc，每个元素一行：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> a <span class="token number">2</span> cc
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span>
+</code></pre></div><p>示例 2，输出当前路径下的所有文件名，每个文件名一行：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token for-or-select variable">file</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">`</span><span class="token function">ls</span><span class="token variable">`</span></span>
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$file</span>
+<span class="token keyword">done</span>
+</code></pre></div><p>示例 3，输出 1-10</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">seq</span> <span class="token number">1</span> <span class="token number">10</span><span class="token variable">)</span></span>
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span> <span class="token comment"># seq 只支持数字，不支持字母</span>
+</code></pre></div><p>示例 4，使用 {1..10} 或者 {a..z}</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">`</span><span class="token punctuation">{</span>a<span class="token punctuation">..</span>z<span class="token punctuation">}</span><span class="token variable">`</span></span>
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span>
+<span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>…<span class="token punctuation">;</span>…<span class="token punctuation">;</span>…<span class="token punctuation">))</span></span> do…done
+</code></pre></div><p>命令格式：（和 c++ 中的括号写法一样，并且）</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>expression<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> expression<span class="token punctuation">))</span></span>
+<span class="token keyword">do</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+<span class="token keyword">done</span>
+</code></pre></div><p>示例，输出 1-10，每个数占一行：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span><span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span>
+</code></pre></div><h3 id="while-do-done-循环"><a href="#while-do-done-循环" class="header-anchor">#</a> while…do…done 循环</h3> <p>命令格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">while</span> condition
+<span class="token keyword">do</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">done</span>
+</code></pre></div><p>示例，文件结束符为 Ctrl+d，输入文件结束符后 read 指令返回 false。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">while</span> <span class="token builtin class-name">read</span> name
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$name</span>
+<span class="token keyword">done</span>
+</code></pre></div><h3 id="until-do-done-循环-和-while-的逻辑相反"><a href="#until-do-done-循环-和-while-的逻辑相反" class="header-anchor">#</a> until…do…done 循环（和 while 的逻辑相反）</h3> <p>当条件为真时结束。</p> <p>命令格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">until</span> condition
+<span class="token keyword">do</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token keyword">done</span>
+</code></pre></div><p>示例，当用户输入 yes 或者 YES 时结束，否则一直等待读入。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">until</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">${word}</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;yes&quot;</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">${word}</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;YES&quot;</span> <span class="token punctuation">]</span>
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">read</span> -p <span class="token string">&quot;Please input yes/YES to stop this program: &quot;</span> word
+<span class="token keyword">done</span>
+</code></pre></div><h3 id="break-命令"><a href="#break-命令" class="header-anchor">#</a> break 命令</h3> <p>跳出当前一层循环，注意与 C/C++ 不同的是：break 不能跳出 case 语句。</p> <p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">while</span> <span class="token builtin class-name">read</span> name
+<span class="token keyword">do</span>
+    <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+    <span class="token keyword">do</span> 
+        <span class="token keyword">case</span> <span class="token variable">$i</span> <span class="token keyword">in</span>
+            <span class="token number">8</span><span class="token punctuation">)</span>
+                <span class="token builtin class-name">break</span>
+                <span class="token punctuation">;</span><span class="token punctuation">;</span>
+            *<span class="token punctuation">)</span>
+                <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+                <span class="token punctuation">;</span><span class="token punctuation">;</span>
+        <span class="token keyword">esac</span>
+    <span class="token keyword">done</span>
+<span class="token keyword">done</span>
+</code></pre></div><p>该示例每读入非 EOF 的字符串，会输出一遍 1-7。<br>
+该程序可以输入 Ctrl+d 文件结束符来结束，也可以直接用 Ctrl+c 杀掉该进程。</p> <h3 id="continue-命令"><a href="#continue-命令" class="header-anchor">#</a> continue 命令</h3> <p>跳出当前循环。</p> <p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+<span class="token keyword">do</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> $i % <span class="token number">2</span><span class="token variable">`</span></span> -eq <span class="token number">0</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+        <span class="token builtin class-name">continue</span>
+    <span class="token keyword">fi</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span>
+</code></pre></div><p>该程序输出 1-10 中的所有奇数。</p> <p>死循环的处理方式：输入 Ctrl+c 即可。</p> <p>否则可以直接关闭进程：<kbd>ps aux</kbd> 返回所有的进程</p> <p>使用  <code>top</code>  命令找到进程的 PID<br>
+ 输入  <code>kill -9 PID</code>  即可关掉此进程</p> <h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <p>bash 中的函数类似于 C/C++ 中的函数，<strong>但 return 的返回值与 C/C++ 不同，返回的是 exit code，取值为 0-255，0 表示正常结束</strong>。</p> <p>如果想获取函数的输出结果，可以通过 echo 输出到 stdout 中，然后通过  <code>$(function_name)</code>  来获取 stdout 中的结果。</p> <p>函数的 return 值可以通过 <code>$?</code>  来获取。</p> <p>命令格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token punctuation">[</span>function<span class="token punctuation">]</span> <span class="token function-name function">func_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment"># function 关键字可以省略</span>
+    语句 <span class="token number">1</span>
+    语句 <span class="token number">2</span>
+    <span class="token punctuation">..</span>.
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="不获取-return-值和-stdout-值"><a href="#不获取-return-值和-stdout-值" class="header-anchor">#</a> 不获取 return 值和 stdout 值</h3> <p>示例</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function-name function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">name</span><span class="token operator">=</span>fw
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;Hello <span class="token variable">$name</span>&quot;</span>
+<span class="token punctuation">}</span>
+func <span class="token comment"># 运行函数的方式就是直接写上函数名 </span>
+</code></pre></div><p>输出结果：</p> <p>Hello fw</p> <h3 id="获取-return-值和-stdout-值"><a href="#获取-return-值和-stdout-值" class="header-anchor">#</a> 获取 return 值和 stdout 值</h3> <p>不写 return 时，默认 return 0。</p> <p>示例</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function-name function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">name</span><span class="token operator">=</span>fw
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;Hello <span class="token variable">$name</span>&quot;</span>
+    <span class="token builtin class-name">return</span> <span class="token number">123</span>
+<span class="token punctuation">}</span>
+<span class="token assign-left variable">output</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>func<span class="token variable">)</span></span>
+<span class="token assign-left variable">ret</span><span class="token operator">=</span><span class="token variable">$?</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;output = <span class="token variable">$output</span>&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;return = <span class="token variable">$ret</span>&quot;</span>
+</code></pre></div><p>输出结果：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>output <span class="token operator">=</span> Hello fw
+<span class="token builtin class-name">return</span> <span class="token operator">=</span> <span class="token number">123</span>
+</code></pre></div><h3 id="函数的输入参数"><a href="#函数的输入参数" class="header-anchor">#</a> 函数的输入参数</h3> <p>在函数内， <code>$1</code>  表示第一个输入参数， <code>$2</code>  表示第二个输入参数，依此类推。</p> <p><strong>注意：函数内的  <code>$0</code>  仍然是 shell 文件名，而不是函数名， 函数内不存在独自的  <code>$0</code> 。</strong></p> <p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function-name function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment"># 递归计算 $1 + ($1 - 1) + ($1 - 2) + ... + 0</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$1</span> -le <span class="token number">0</span> <span class="token punctuation">]</span> 
+    <span class="token keyword">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token number">0</span>
+        <span class="token builtin class-name">return</span> <span class="token number">0</span>
+    <span class="token keyword">fi</span>  
+    <span class="token assign-left variable">sum</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>func <span class="token punctuation">$(</span>expr $1 - <span class="token number">1</span><span class="token punctuation">)</span><span class="token variable">)</span></span> <span class="token comment"># 可以不使用 $() 也可以使用 ``</span>
+    <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">expr</span> $sum + $1<span class="token variable">)</span></span>
+<span class="token punctuation">}</span>
+<span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$(</span>func <span class="token number">10</span><span class="token variable">)</span></span>
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>55
+</code></pre></div><h3 id="函数内的局部变量"><a href="#函数内的局部变量" class="header-anchor">#</a> 函数内的局部变量</h3> <p>可以在函数内定义局部变量，作用范围仅在当前函数内。</p> <p>可以在递归函数中定义局部变量。</p> <p>命令格式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">local</span> 变量名<span class="token operator">=</span>变量值
+</code></pre></div><p>例如：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token shebang important">#! /bin/bash</span>
+<span class="token function-name function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">local</span> <span class="token assign-left variable">name</span><span class="token operator">=</span>fw
+    <span class="token builtin class-name">echo</span> <span class="token variable">$name</span>
+<span class="token punctuation">}</span>
+func
+<span class="token builtin class-name">echo</span> <span class="token variable">$name</span>
+</code></pre></div><p>输出结果：</p> <p>fw</p> <p>第一行为函数内的 name 变量，第二行为函数外调用 name 变量，会发现此时该变量不存在。</p></div></article> <section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
+      Created : 2023-04-29
+    </span> <!----></section> <section class="post-links" data-v-4e23451f><a href="/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html" class="post-link" data-v-4e23451f>
+      Previous Post : git-github的入门
+    </a> <!----></section></section> <!----></div></main> <aside class="aside" data-v-4dd605a1><div class="info-card main-div" data-v-9d847660 data-v-4dd605a1><div class="info-card-header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(https://cdn.acwing.com/media/article/image/2023/04/26/120382_b639cb7ce4-background9.png);" data-v-9d847660><img src="https://cdn.acwing.com/media/user/profile/photo/120382_lg_2ec963416b.jpg" alt="shi'wei" class="info-avatar" data-v-9d847660></div> <div class="info-card-body" data-v-9d847660><section class="info-nickname" data-v-9d847660>
+      shi'wei
+    </section> <section class="info-desc" data-v-9d847660>Waiting for love.</section> <section class="info-contact" data-v-9d847660><section data-v-9d847660><span title="Tai'Zhou, Zhe'Jiang, China" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>Tai'Zhou, Zhe'Jiang, China</title><use xlink:href="#icon-location" data-v-9d847660 data-v-9d847660></use></svg><span class="info-text" data-v-9d847660 data-v-9d847660>
+          Tai'Zhou, Zhe'Jiang, China
+        </span></span></section> <section data-v-9d847660><span title="Tai'Zhou University" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>Tai'Zhou University</title><use xlink:href="#icon-organization" data-v-9d847660 data-v-9d847660></use></svg><span class="info-text" data-v-9d847660 data-v-9d847660>
+          Tai'Zhou University
+        </span></span></section> <section data-v-9d847660><a href="mailto:shmilysw2002@163.com" title="shmilysw2002@163.com" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>shmilysw2002@163.com</title><use xlink:href="#icon-email" data-v-9d847660 data-v-9d847660></use></svg><span class="info-text" data-v-9d847660 data-v-9d847660>
+          shmilysw2002@163.com
+        </span></a></section></section></div> <div class="info-card-footer" data-v-9d847660><section class="info-sns clearfix" data-v-9d847660><a href="https://github.com/Shmilysw" target="_blank" class="sns-link" data-v-9d847660><span title="GitHub: Shmilysw" class="sns-icon" data-v-9d847660 data-v-9d847660><svg class="icon" style="font-size:1.5em;" data-v-9d847660 data-v-9d847660><title data-v-9d847660 data-v-9d847660>GitHub: Shmilysw</title><use xlink:href="#icon-github" data-v-9d847660 data-v-9d847660></use></svg></span></a></section></div></div> <div class="post-nav-card main-div" style="position:relative;top:0;width:0px;" data-v-4dd605a1><div class="post-nav-contents"><svg class="icon"><title>book</title><use xlink:href="#icon-book"></use></svg> <span>Table of Contents</span> <div class="post-nav-toc"><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#执行">执行</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#用解释器执行">用解释器执行：</a></li></ul></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#注释">注释</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#变量">变量</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#定义变量">定义变量</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#使用变量">使用变量</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#只读变量">只读变量</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#删除变量">删除变量</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#变量类型">变量类型</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#字符串">字符串</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#获取字符串长度">获取字符串长度</a></li></ul></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#默认变量">默认变量</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#其他参数相关的变量">其他参数相关的变量</a></li></ul></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#数组">数组</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#定义">定义</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#读取数组中某个元素的值">读取数组中某个元素的值</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#读取整个数组">读取整个数组</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#读取数组长度">读取数组长度</a></li></ul></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#if-then-语句">if…then 语句</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#单层-if-else">单层 if-else</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#多层-if-elif-elif-else">多层 if-elif-elif-else</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#case-esac-形式">case…esac 形式</a></li></ul></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#for-in-do-done">for…in…do…done</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#while-do-done-循环">while…do…done 循环</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#until-do-done-循环-和-while-的逻辑相反">until…do…done 循环（和 while 的逻辑相反）</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#break-命令">break 命令</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#continue-命令">continue 命令</a></li></ul></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#函数">函数</a><ul><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#不获取-return-值和-stdout-值">不获取 return 值和 stdout 值</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#获取-return-值和-stdout-值">获取 return 值和 stdout 值</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#函数的输入参数">函数的输入参数</a></li><li><a href="/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html#函数内的局部变量">函数内的局部变量</a></li></ul></li></ul></div></div> <!----></div></aside></div> <footer class="footer" data-v-1375e54c><p class="footer-sns-links" data-v-1375e54c><a href="https://github.com/Shmilysw" target="_blank" class="sns-link" data-v-1375e54c><span title="GitHub: Shmilysw" class="sns-icon" data-v-1375e54c data-v-1375e54c><svg class="icon" style="font-size:25px;" data-v-1375e54c data-v-1375e54c><title data-v-1375e54c data-v-1375e54c>GitHub: Shmilysw</title><use xlink:href="#icon-github" data-v-1375e54c data-v-1375e54c></use></svg></span></a></p> <!----> <!----></footer></div><div class="global-ui"><!----><!----><APlayer audio="" fixed="true" theme="#b7daff" loop="loop" order="list" preload="auto" volume="0.7" mutex="true" lrc-type="3" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer><div id="goTop" class="hide-cat" data-v-bf92849a></div><!----></div></div>
+    <script src="/assets/js/app.2303c9af.js" defer></script><script src="/assets/js/10.2eb9dcae.js" defer></script><script src="/assets/js/24.e12827b0.js" defer></script>
+  </body>
+</html>
