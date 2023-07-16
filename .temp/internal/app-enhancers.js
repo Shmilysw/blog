@@ -1,7 +1,7 @@
 import m0 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\0.js"
 import m1 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\1.js"
 import m2 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\data-block.js"
-import m3 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\global-components-3.js"
+import m3 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\global-components-45.js"
 import m4 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\2.js"
 import m5 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\3.js"
 import m6 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\4.js"
@@ -18,7 +18,7 @@ import m16 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\13.js"
 import m17 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\14.js"
 import m18 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\15.js"
 import m19 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\16.js"
-import m20 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\global-components-4.js"
+import m20 from "D:\\shmilysw\\blog\\.temp\\app-enhancers\\global-components-46.js"
 
 export default [
   m0,

@@ -14,6 +14,18 @@ export default {
       "v-be505a2e"
     ]
   },
+  "JavaScript": {
+    "path": "/posts/tags/JavaScript.html",
+    "pageKeys": [
+      "v-7b0524ee"
+    ]
+  },
+  "编程语言学习": {
+    "path": "/posts/tags/编程语言学习.html",
+    "pageKeys": [
+      "v-7b0524ee"
+    ]
+  },
   "LeetCode": {
     "path": "/posts/tags/LeetCode.html",
     "pageKeys": [
@@ -32,18 +44,6 @@ export default {
       "v-d2753ba4"
     ]
   },
-  "JavaScript": {
-    "path": "/posts/tags/JavaScript.html",
-    "pageKeys": [
-      "v-7b0524ee"
-    ]
-  },
-  "编程语言学习": {
-    "path": "/posts/tags/编程语言学习.html",
-    "pageKeys": [
-      "v-7b0524ee"
-    ]
-  },
   "Linux": {
     "path": "/posts/tags/Linux.html",
     "pageKeys": [
@@ -60,6 +60,31 @@ export default {
     "path": "/posts/tags/shell 脚本.html",
     "pageKeys": [
       "v-6ef7186e"
+    ]
+  },
+  "编程思维": {
+    "path": "/posts/tags/编程思维.html",
+    "pageKeys": [
+      "v-2f6b44b6"
+    ]
+  },
+  "资源共享": {
+    "path": "/posts/tags/资源共享.html",
+    "pageKeys": [
+      "v-2f6b44b6"
+    ]
+  },
+  "WEB前端开发": {
+    "path": "/posts/tags/WEB前端开发.html",
+    "pageKeys": [
+      "v-f01ebae2"
+    ]
+  },
+  "设计模式": {
+    "path": "/posts/tags/设计模式.html",
+    "pageKeys": [
+      "v-0d890a3b",
+      "v-b2a94cee"
     ]
   }
 }

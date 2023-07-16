@@ -186,6 +186,11 @@ module.exports = {
                 link: "/about/",
                 exact: false,
             },
+            {
+                text: "Github",
+                link: "https://github.com/Shmilysw",
+                exact: false,
+            },
             // {
             //     text: "notef",
             //     link: "https://notef.vercel.app/",
@@ -199,7 +204,7 @@ module.exports = {
         ], //navbar导航栏
         personalInfo: {
             nickname: "shi'wei",
-            description: "Waiting for love.",
+            description: "Happy Coding<br />Happy Life",
             // description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=80% height=52 src="//music.163.com/outchain/player?type=2&id=1297742167&auto=0&height=32"></iframe>',
             email: "shmilysw2002@163.com",
             location: "Tai'Zhou, Zhe'Jiang, China",
@@ -208,10 +213,10 @@ module.exports = {
             // https://cdn.acwing.com/media/user/profile/photo/120382_lg_2ec963416b.jpg
             avatar: "https://cdn.acwing.com/media/user/profile/photo/120382_lg_2ec963416b.jpg",
             sns: {
-                github: {
-                    account: "Shmilysw",
-                    link: "https://github.com/Shmilysw",
-                },
+                // github: {
+                //     account: "Shmilysw",
+                //     link: "https://github.com/Shmilysw",
+                // },
                 // twitter: {
                 //     account: 'Shmilysw171858',
                 //     link: 'https://twitter.com/Shmilysw171858',
@@ -234,10 +239,14 @@ module.exports = {
         header: {
             background: {
                 useGeo: false,
-                url: "https://s2.loli.net/2022/02/16/pa8cMOXlbjYABTI.png",
+                // url: "https://cdn.acwing.com/media/article/image/2023/07/06/120382_9cde90631b-wallhaven-zyxvqy_1920x1080.png",
+                // url: "https://cdn.acwing.com/media/article/image/2023/07/06/120382_4d4e1fd21b-wallhaven-ex9gwo_1920x1080.png",
+                url: "https://cdn.acwing.com/media/article/image/2023/07/06/120382_347c122f1b-wallhaven-6d5r5x_1920x1080.png",
+                // url: "https://cdn.acwing.com/media/article/image/2023/07/06/120382_0ca1d2711b-home_picture.png",
+                // url: "https://cdn.acwing.com/media/article/image/2023/07/06/120382_9f486d441b-wallhaven-1k9289_1920x1080.png",
+                // url: "https://s2.loli.net/2022/02/16/pa8cMOXlbjYABTI.png",
                 // url: "https://cdn.acwing.com/media/article/image/2023/04/26/120382_bd66bcfce4-background00.png",
-                // url:
-                //     "https://cdn.acwing.com/media/article/image/2021/07/10/101476_991fc8bee1-head002.jpg",
+                // url: "https://cdn.acwing.com/media/article/image/2021/07/10/101476_991fc8bee1-head002.jpg",
             },
             showTitle: true,
         }, //header设置

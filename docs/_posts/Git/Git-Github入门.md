@@ -136,7 +136,7 @@ tags: [git, github]
   // 最后推到远端仓库
   git push origin master
   ```
-  + 总结：不要乱删 .git 文件，如果是 git clone 下来的，就使用原本的 .git 文件，不要乱挪位置！  
+  + 总结：不要乱删 .git 文件，如果是 git clone 下来的，就使用原本的 .git 文件，不要乱移动其位置！  
 ### 5. github的基本介绍
 
   ```

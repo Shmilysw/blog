@@ -101,6 +101,18 @@ export const siteData = {
   ],
   "pages": [
     {
+      "frontmatter": {
+        "title": "Shmilysw.github.io",
+        "layout": "Home",
+        "readingShow": "top"
+      },
+      "regularPath": "/",
+      "key": "v-b2754d56",
+      "path": "/",
+      "type": "page",
+      "codeSwitcherOptions": {}
+    },
+    {
       "title": "git-github的入门",
       "frontmatter": {
         "title": "git-github的入门",
@@ -150,6 +162,8 @@ export const siteData = {
           "slug": "_5-github的基本介绍"
         }
       ],
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
       "type": "post",
       "top": false,
       "tags": [
@@ -157,19 +171,7 @@ export const siteData = {
         "github"
       ],
       "createdAt": "2023-03-25",
-      "updatedAt": null,
-      "codeSwitcherOptions": {}
-    },
-    {
-      "frontmatter": {
-        "title": "Shmilysw.github.io",
-        "layout": "Home",
-        "readingShow": "top"
-      },
-      "regularPath": "/",
-      "key": "v-b2754d56",
-      "path": "/",
-      "type": "page",
+      "updatedAt": "2023-05-02",
       "codeSwitcherOptions": {}
     },
     {
@@ -181,64 +183,9 @@ export const siteData = {
       "relativePath": "Projects/index.md",
       "key": "v-469e4aca",
       "path": "/Projects/",
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
       "type": "page",
-      "codeSwitcherOptions": {}
-    },
-    {
-      "title": "LeetCode 2376. 统计特殊整数",
-      "frontmatter": {
-        "title": "LeetCode 2376. 统计特殊整数",
-        "date": "2022-8-15",
-        "tags": [
-          "LeetCode",
-          "数位dp",
-          "算法"
-        ],
-        "layout": "Post",
-        "permalink": "/posts/:year/:month/:day/:slug.html",
-        "draft": false,
-        "readingShow": "top"
-      },
-      "regularPath": "/_posts/LeetCode%E5%88%B7%E9%A2%98/%E6%95%B0%E4%BD%8Ddp/LeetCode-2376.%20%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html",
-      "relativePath": "_posts/LeetCode刷题/数位dp/LeetCode-2376. 统计特殊整数.md",
-      "key": "v-d2753ba4",
-      "path": "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "数位DP | 暴力 | 模板",
-          "slug": "数位dp-暴力-模板"
-        },
-        {
-          "level": 3,
-          "title": "原题连接",
-          "slug": "原题连接"
-        },
-        {
-          "level": 3,
-          "title": "题目:",
-          "slug": "题目"
-        },
-        {
-          "level": 3,
-          "title": "方法一：",
-          "slug": "方法一"
-        },
-        {
-          "level": 3,
-          "title": "方法二：",
-          "slug": "方法二"
-        }
-      ],
-      "type": "post",
-      "top": false,
-      "tags": [
-        "LeetCode",
-        "数位dp",
-        "算法"
-      ],
-      "createdAt": "2022-08-15",
-      "updatedAt": null,
       "codeSwitcherOptions": {}
     },
     {
@@ -421,6 +368,8 @@ export const siteData = {
           "slug": "箭头函数的this"
         }
       ],
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
       "type": "post",
       "top": false,
       "tags": [
@@ -428,7 +377,66 @@ export const siteData = {
         "编程语言学习"
       ],
       "createdAt": "2022-10-18",
-      "updatedAt": null,
+      "updatedAt": "2023-05-02",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "title": "LeetCode 2376. 统计特殊整数",
+      "frontmatter": {
+        "title": "LeetCode 2376. 统计特殊整数",
+        "date": "2022-8-15",
+        "tags": [
+          "LeetCode",
+          "数位dp",
+          "算法"
+        ],
+        "layout": "Post",
+        "permalink": "/posts/:year/:month/:day/:slug.html",
+        "draft": false,
+        "readingShow": "top"
+      },
+      "regularPath": "/_posts/LeetCode%E5%88%B7%E9%A2%98/%E6%95%B0%E4%BD%8Ddp/LeetCode-2376.%20%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html",
+      "relativePath": "_posts/LeetCode刷题/数位dp/LeetCode-2376. 统计特殊整数.md",
+      "key": "v-d2753ba4",
+      "path": "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数位DP | 暴力 | 模板",
+          "slug": "数位dp-暴力-模板"
+        },
+        {
+          "level": 3,
+          "title": "原题连接",
+          "slug": "原题连接"
+        },
+        {
+          "level": 3,
+          "title": "题目:",
+          "slug": "题目"
+        },
+        {
+          "level": 3,
+          "title": "方法一：",
+          "slug": "方法一"
+        },
+        {
+          "level": 3,
+          "title": "方法二：",
+          "slug": "方法二"
+        }
+      ],
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
+      "type": "post",
+      "top": false,
+      "tags": [
+        "LeetCode",
+        "数位dp",
+        "算法"
+      ],
+      "createdAt": "2022-08-15",
+      "updatedAt": "2023-05-02",
       "codeSwitcherOptions": {}
     },
     {
@@ -471,6 +479,8 @@ export const siteData = {
           "slug": "自己总结"
         }
       ],
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
       "type": "post",
       "top": false,
       "tags": [
@@ -478,53 +488,7 @@ export const siteData = {
         "操作系统"
       ],
       "createdAt": "2022-08-14",
-      "updatedAt": null,
-      "codeSwitcherOptions": {}
-    },
-    {
-      "title": "Shmilysw",
-      "frontmatter": {
-        "layout": "AboutLayout",
-        "title": "Shmilysw",
-        "readingShow": "top"
-      },
-      "regularPath": "/about/",
-      "relativePath": "about/index.md",
-      "key": "v-2aa314de",
-      "path": "/about/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "大家好，这里是Shmilysw！怎么感觉我是在这里写日记，哈哈！",
-          "slug": "大家好-这里是shmilysw-怎么感觉我是在这里写日记-哈哈"
-        },
-        {
-          "level": 2,
-          "title": "个人简介：",
-          "slug": "个人简介"
-        },
-        {
-          "level": 2,
-          "title": "目前状态：",
-          "slug": "目前状态"
-        },
-        {
-          "level": 2,
-          "title": "未来规划：",
-          "slug": "未来规划"
-        },
-        {
-          "level": 2,
-          "title": "浅浅的学习了的技术：",
-          "slug": "浅浅的学习了的技术"
-        },
-        {
-          "level": 2,
-          "title": "学习历程",
-          "slug": "学习历程"
-        }
-      ],
-      "type": "page",
+      "updatedAt": "2023-05-02",
       "codeSwitcherOptions": {}
     },
     {
@@ -706,13 +670,327 @@ export const siteData = {
           "slug": "函数内的局部变量"
         }
       ],
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
       "type": "post",
       "top": false,
       "tags": [
         "shell 脚本"
       ],
       "createdAt": "2023-04-29",
+      "updatedAt": "2023-05-02",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "title": "浅学动态链接库DLL",
+      "frontmatter": {
+        "title": "浅学动态链接库DLL",
+        "date": "2023-07-06T00:00:00.000Z",
+        "tags": [
+          "编程思维",
+          "资源共享"
+        ],
+        "layout": "Post",
+        "permalink": "/posts/:year/:month/:day/:slug.html",
+        "draft": false,
+        "readingShow": "top"
+      },
+      "regularPath": "/_posts/%E7%BC%96%E7%A8%8B%E6%80%9D%E7%BB%B4/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93DLL.html",
+      "relativePath": "_posts/编程思维/动态链接库DLL.md",
+      "key": "v-2f6b44b6",
+      "path": "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1、DLL是什么",
+          "slug": "_1、dll是什么"
+        },
+        {
+          "level": 2,
+          "title": "2、几个重要的DLL",
+          "slug": "_2、几个重要的dll"
+        },
+        {
+          "level": 2,
+          "title": "3、使用DLL的好处",
+          "slug": "_3、使用dll的好处"
+        },
+        {
+          "level": 3,
+          "title": "3.1、提供代码共享与节省内存",
+          "slug": "_3-1、提供代码共享与节省内存"
+        },
+        {
+          "level": 3,
+          "title": "3.2、便利团队协作与迭代开发",
+          "slug": "_3-2、便利团队协作与迭代开发"
+        },
+        {
+          "level": 3,
+          "title": "3.3、易于扩展与本地化",
+          "slug": "_3-3、易于扩展与本地化"
+        },
+        {
+          "level": 2,
+          "title": "4、Mac 和 Linux",
+          "slug": "_4、mac-和-linux"
+        }
+      ],
+      "type": "post",
+      "top": false,
+      "tags": [
+        "编程思维",
+        "资源共享"
+      ],
+      "createdAt": "2023-07-06",
       "updatedAt": null,
+      "codeSwitcherOptions": {}
+    },
+    {
+      "title": "WEB前端开发-事件循环",
+      "frontmatter": {
+        "title": "WEB前端开发-事件循环",
+        "date": "2023-07-16T00:00:00.000Z",
+        "tags": [
+          "WEB前端开发"
+        ],
+        "layout": "Post",
+        "permalink": "/posts/:year/:month/:day/:slug.html",
+        "draft": false,
+        "readingShow": "top"
+      },
+      "regularPath": "/_posts/WEB/WEB%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html",
+      "relativePath": "_posts/WEB/WEB前端-事件循环.md",
+      "key": "v-f01ebae2",
+      "path": "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1. 浏览器的进程模型",
+          "slug": "_1-浏览器的进程模型"
+        },
+        {
+          "level": 3,
+          "title": "1.1 何为进程？",
+          "slug": "_1-1-何为进程"
+        },
+        {
+          "level": 3,
+          "title": "1.2 何为线程？",
+          "slug": "_1-2-何为线程"
+        },
+        {
+          "level": 3,
+          "title": "1.3 浏览器有哪些进程和线程？",
+          "slug": "_1-3-浏览器有哪些进程和线程"
+        },
+        {
+          "level": 2,
+          "title": "2. 渲染主线程是如何工作的？",
+          "slug": "_2-渲染主线程是如何工作的"
+        },
+        {
+          "level": 2,
+          "title": "3. 若干解释",
+          "slug": "_3-若干解释"
+        },
+        {
+          "level": 3,
+          "title": "3.1 何为异步？",
+          "slug": "_3-1-何为异步"
+        },
+        {
+          "level": 3,
+          "title": "3.2 JS为何会阻碍渲染？",
+          "slug": "_3-2-js为何会阻碍渲染"
+        },
+        {
+          "level": 3,
+          "title": "3.3 任务有优先级吗？",
+          "slug": "_3-3-任务有优先级吗"
+        }
+      ],
+      "type": "post",
+      "top": false,
+      "tags": [
+        "WEB前端开发"
+      ],
+      "createdAt": "2023-07-16",
+      "updatedAt": null,
+      "codeSwitcherOptions": {}
+    },
+    {
+      "title": "C#_三层（UI BLL DLL Model）架构模式",
+      "frontmatter": {
+        "title": "C#_三层（UI BLL DLL Model）架构模式",
+        "date": "2023-07-11T00:00:00.000Z",
+        "tags": [
+          "设计模式"
+        ],
+        "layout": "Post",
+        "permalink": "/posts/:year/:month/:day/:slug.html",
+        "draft": false,
+        "readingShow": "top"
+      },
+      "regularPath": "/_posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/C#_%E4%B8%89%E5%B1%82%EF%BC%88BLL%20DAL%20Model%EF%BC%89%E6%9E%B6%E6%9E%84.html",
+      "relativePath": "_posts/设计模式/C#_三层（BLL DAL Model）架构.md",
+      "key": "v-0d890a3b",
+      "path": "/posts/2023/07/11/c-%E4%B8%89%E5%B1%82-bll-dal-model-%E6%9E%B6%E6%9E%84.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "三层:",
+          "slug": "三层"
+        }
+      ],
+      "type": "post",
+      "top": false,
+      "tags": [
+        "设计模式"
+      ],
+      "createdAt": "2023-07-11",
+      "updatedAt": null,
+      "codeSwitcherOptions": {}
+    },
+    {
+      "title": "微服务架构-马丁弗勒",
+      "frontmatter": {
+        "title": "微服务架构-马丁弗勒",
+        "date": "2023-05-06T00:00:00.000Z",
+        "tags": [
+          "设计模式"
+        ],
+        "layout": "Post",
+        "permalink": "/posts/:year/:month/:day/:slug.html",
+        "draft": false,
+        "readingShow": "top"
+      },
+      "regularPath": "/_posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html",
+      "relativePath": "_posts/设计模式/微服务架构-马丁弗勒.md",
+      "key": "v-b2a94cee",
+      "path": "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "微服务",
+          "slug": "微服务"
+        },
+        {
+          "level": 2,
+          "title": "微服务风格的特性",
+          "slug": "微服务风格的特性"
+        },
+        {
+          "level": 3,
+          "title": "组件化（Componentization ）与服务（Services）",
+          "slug": "组件化-componentization-与服务-services"
+        },
+        {
+          "level": 3,
+          "title": "围绕业务功能的组织",
+          "slug": "围绕业务功能的组织"
+        },
+        {
+          "level": 3,
+          "title": "产品不是项目",
+          "slug": "产品不是项目"
+        },
+        {
+          "level": 3,
+          "title": "强化终端及弱化通道",
+          "slug": "强化终端及弱化通道"
+        },
+        {
+          "level": 3,
+          "title": "分散治理",
+          "slug": "分散治理"
+        },
+        {
+          "level": 3,
+          "title": "分散数据管理",
+          "slug": "分散数据管理"
+        },
+        {
+          "level": 3,
+          "title": "基础设施自动化",
+          "slug": "基础设施自动化"
+        },
+        {
+          "level": 3,
+          "title": "容错性设计",
+          "slug": "容错性设计"
+        },
+        {
+          "level": 3,
+          "title": "设计改进",
+          "slug": "设计改进"
+        },
+        {
+          "level": 2,
+          "title": "微服务是未来吗？",
+          "slug": "微服务是未来吗"
+        },
+        {
+          "level": 2,
+          "title": "其它",
+          "slug": "其它"
+        },
+        {
+          "level": 3,
+          "title": "参考资料",
+          "slug": "参考资料"
+        }
+      ],
+      "type": "post",
+      "top": false,
+      "tags": [
+        "设计模式"
+      ],
+      "createdAt": "2023-05-06",
+      "updatedAt": null,
+      "codeSwitcherOptions": {}
+    },
+    {
+      "title": "Shmilysw",
+      "frontmatter": {
+        "layout": "AboutLayout",
+        "title": "Shmilysw",
+        "readingShow": "top"
+      },
+      "regularPath": "/about/",
+      "relativePath": "about/index.md",
+      "key": "v-2aa314de",
+      "path": "/about/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "个人简介：",
+          "slug": "个人简介"
+        },
+        {
+          "level": 2,
+          "title": "目前状态：",
+          "slug": "目前状态"
+        },
+        {
+          "level": 2,
+          "title": "未来规划：",
+          "slug": "未来规划"
+        },
+        {
+          "level": 2,
+          "title": "浅浅的学习了的技术：",
+          "slug": "浅浅的学习了的技术"
+        },
+        {
+          "level": 2,
+          "title": "学习历程",
+          "slug": "学习历程"
+        }
+      ],
+      "lastUpdated": "5/2/2023, 6:08:33 PM",
+      "lastUpdatedTimestamp": 1683022113000,
+      "type": "page",
       "codeSwitcherOptions": {}
     },
     {
@@ -773,6 +1051,28 @@ export const siteData = {
     },
     {
       "frontmatter": {
+        "title": "JavaScript | Tag",
+        "layout": "Tag",
+        "readingShow": "top"
+      },
+      "regularPath": "/posts/tags/JavaScript.html",
+      "key": "v-493b3327",
+      "path": "/posts/tags/JavaScript.html",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "frontmatter": {
+        "title": "编程语言学习 | Tag",
+        "layout": "Tag",
+        "readingShow": "top"
+      },
+      "regularPath": "/posts/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0.html",
+      "key": "v-c58de496",
+      "path": "/posts/tags/编程语言学习.html",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "frontmatter": {
         "title": "LeetCode | Tag",
         "layout": "Tag",
         "readingShow": "top"
@@ -806,28 +1106,6 @@ export const siteData = {
     },
     {
       "frontmatter": {
-        "title": "JavaScript | Tag",
-        "layout": "Tag",
-        "readingShow": "top"
-      },
-      "regularPath": "/posts/tags/JavaScript.html",
-      "key": "v-493b3327",
-      "path": "/posts/tags/JavaScript.html",
-      "codeSwitcherOptions": {}
-    },
-    {
-      "frontmatter": {
-        "title": "编程语言学习 | Tag",
-        "layout": "Tag",
-        "readingShow": "top"
-      },
-      "regularPath": "/posts/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0.html",
-      "key": "v-c58de496",
-      "path": "/posts/tags/编程语言学习.html",
-      "codeSwitcherOptions": {}
-    },
-    {
-      "frontmatter": {
         "title": "Linux | Tag",
         "layout": "Tag",
         "readingShow": "top"
@@ -857,6 +1135,50 @@ export const siteData = {
       "regularPath": "/posts/tags/shell%20%E8%84%9A%E6%9C%AC.html",
       "key": "v-4d6adad2",
       "path": "/posts/tags/shell 脚本.html",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "frontmatter": {
+        "title": "编程思维 | Tag",
+        "layout": "Tag",
+        "readingShow": "top"
+      },
+      "regularPath": "/posts/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E7%BB%B4.html",
+      "key": "v-08b4753d",
+      "path": "/posts/tags/编程思维.html",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "frontmatter": {
+        "title": "资源共享 | Tag",
+        "layout": "Tag",
+        "readingShow": "top"
+      },
+      "regularPath": "/posts/tags/%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB.html",
+      "key": "v-423fec78",
+      "path": "/posts/tags/资源共享.html",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "frontmatter": {
+        "title": "WEB前端开发 | Tag",
+        "layout": "Tag",
+        "readingShow": "top"
+      },
+      "regularPath": "/posts/tags/WEB%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91.html",
+      "key": "v-e37c3508",
+      "path": "/posts/tags/WEB前端开发.html",
+      "codeSwitcherOptions": {}
+    },
+    {
+      "frontmatter": {
+        "title": "设计模式 | Tag",
+        "layout": "Tag",
+        "readingShow": "top"
+      },
+      "regularPath": "/posts/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html",
+      "key": "v-531d4c54",
+      "path": "/posts/tags/设计模式.html",
       "codeSwitcherOptions": {}
     }
   ],
@@ -908,26 +1230,26 @@ export const siteData = {
         "text": "About",
         "link": "/about/",
         "exact": false
+      },
+      {
+        "text": "Github",
+        "link": "https://github.com/Shmilysw",
+        "exact": false
       }
     ],
     "personalInfo": {
       "nickname": "shi'wei",
-      "description": "Waiting for love.",
+      "description": "Happy Coding<br />Happy Life",
       "email": "shmilysw2002@163.com",
       "location": "Tai'Zhou, Zhe'Jiang, China",
       "organization": "Tai'Zhou University",
       "avatar": "https://cdn.acwing.com/media/user/profile/photo/120382_lg_2ec963416b.jpg",
-      "sns": {
-        "github": {
-          "account": "Shmilysw",
-          "link": "https://github.com/Shmilysw"
-        }
-      }
+      "sns": {}
     },
     "header": {
       "background": {
         "useGeo": false,
-        "url": "https://s2.loli.net/2022/02/16/pa8cMOXlbjYABTI.png"
+        "url": "https://cdn.acwing.com/media/article/image/2023/07/06/120382_347c122f1b-wallhaven-6d5r5x_1920x1080.png"
       },
       "showTitle": true
     },
