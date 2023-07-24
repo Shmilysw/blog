@@ -9,34 +9,6 @@ import GlobalLayout from "D:\\shmilysw\\blog\\node_modules\\vuepress-theme-meteo
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-b2754d56",
-    path: "/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Home", "v-b2754d56").then(next)
-    },
-  },
-  {
-    path: "/index.html",
-    redirect: "/"
-  },
-  {
-    name: "v-be505a2e",
-    path: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-be505a2e").then(next)
-    },
-  },
-  {
-    path: "/posts/2023/03/25/git-github入门.html",
-    redirect: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html"
-  },
-  {
-    path: "/_posts/Git/Git-Github入门.html",
-    redirect: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html"
-  },
-  {
     name: "v-469e4aca",
     path: "/Projects/",
     component: GlobalLayout,
@@ -49,36 +21,16 @@ export const routes = [
     redirect: "/Projects/"
   },
   {
-    name: "v-7b0524ee",
-    path: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html",
+    name: "v-b2754d56",
+    path: "/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-7b0524ee").then(next)
+      ensureAsyncComponentsLoaded("Home", "v-b2754d56").then(next)
     },
   },
   {
-    path: "/posts/2022/10/18/浅学javascript.html",
-    redirect: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html"
-  },
-  {
-    path: "/_posts/Javascript/浅学JavaScript.html",
-    redirect: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html"
-  },
-  {
-    name: "v-d2753ba4",
-    path: "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-d2753ba4").then(next)
-    },
-  },
-  {
-    path: "/posts/2022/08/15/leetcode-2376-统计特殊整数.html",
-    redirect: "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html"
-  },
-  {
-    path: "/_posts/LeetCode刷题/数位dp/LeetCode-2376. 统计特殊整数.html",
-    redirect: "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html"
+    path: "/index.html",
+    redirect: "/"
   },
   {
     name: "v-3bba8da4",
@@ -97,6 +49,38 @@ export const routes = [
     redirect: "/posts/2022/08/14/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"
   },
   {
+    name: "v-be505a2e",
+    path: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-be505a2e").then(next)
+    },
+  },
+  {
+    path: "/posts/2023/03/25/git-github入门.html",
+    redirect: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html"
+  },
+  {
+    path: "/_posts/Git/Git-Github入门.html",
+    redirect: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html"
+  },
+  {
+    name: "v-7b0524ee",
+    path: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-7b0524ee").then(next)
+    },
+  },
+  {
+    path: "/posts/2022/10/18/浅学javascript.html",
+    redirect: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html"
+  },
+  {
+    path: "/_posts/Javascript/浅学JavaScript.html",
+    redirect: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html"
+  },
+  {
     name: "v-6ef7186e",
     path: "/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html",
     component: GlobalLayout,
@@ -111,38 +95,6 @@ export const routes = [
   {
     path: "/_posts/Linux/shell/00shell基础语法_Bash.html",
     redirect: "/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html"
-  },
-  {
-    name: "v-2f6b44b6",
-    path: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-2f6b44b6").then(next)
-    },
-  },
-  {
-    path: "/posts/2023/07/06/动态链接库dll.html",
-    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
-  },
-  {
-    path: "/_posts/编程思维/动态链接库DLL.html",
-    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
-  },
-  {
-    name: "v-f01ebae2",
-    path: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-f01ebae2").then(next)
-    },
-  },
-  {
-    path: "/posts/2023/07/16/web前端-事件循环.html",
-    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
-  },
-  {
-    path: "/_posts/WEB/WEB前端-事件循环.html",
-    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
   },
   {
     name: "v-0d890a3b",
@@ -161,6 +113,66 @@ export const routes = [
     redirect: "/posts/2023/07/11/c-%E4%B8%89%E5%B1%82-bll-dal-model-%E6%9E%B6%E6%9E%84.html"
   },
   {
+    name: "v-f01ebae2",
+    path: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-f01ebae2").then(next)
+    },
+  },
+  {
+    path: "/posts/2023/07/16/web前端-事件循环.html",
+    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
+  },
+  {
+    path: "/_posts/WEB/WEB前端-事件循环.html",
+    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
+  },
+  {
+    name: "v-d2753ba4",
+    path: "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-d2753ba4").then(next)
+    },
+  },
+  {
+    path: "/posts/2022/08/15/leetcode-2376-统计特殊整数.html",
+    redirect: "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html"
+  },
+  {
+    path: "/_posts/LeetCode刷题/数位dp/LeetCode-2376. 统计特殊整数.html",
+    redirect: "/posts/2022/08/15/leetcode-2376-%E7%BB%9F%E8%AE%A1%E7%89%B9%E6%AE%8A%E6%95%B4%E6%95%B0.html"
+  },
+  {
+    name: "v-2f6b44b6",
+    path: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-2f6b44b6").then(next)
+    },
+  },
+  {
+    path: "/posts/2023/07/06/动态链接库dll.html",
+    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
+  },
+  {
+    path: "/_posts/编程思维/动态链接库DLL.html",
+    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
+  },
+  {
+    name: "v-2aa314de",
+    path: "/about/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("AboutLayout", "v-2aa314de").then(next)
+    },
+  },
+  {
+    path: "/about/index.html",
+    redirect: "/about/"
+  },
+  {
     name: "v-b2a94cee",
     path: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html",
     component: GlobalLayout,
@@ -175,18 +187,6 @@ export const routes = [
   {
     path: "/_posts/设计模式/微服务架构-马丁弗勒.html",
     redirect: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html"
-  },
-  {
-    name: "v-2aa314de",
-    path: "/about/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("AboutLayout", "v-2aa314de").then(next)
-    },
-  },
-  {
-    path: "/about/index.html",
-    redirect: "/about/"
   },
   {
     name: "v-1f814451",
@@ -225,6 +225,24 @@ export const routes = [
     redirect: "/posts/categories/"
   },
   {
+    name: "v-2076106c",
+    path: "/posts/tags/Linux.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-2076106c").then(next)
+    },
+    meta: {"tagName":"Linux"}
+  },
+  {
+    name: "v-23617cfc",
+    path: "/posts/tags/操作系统.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-23617cfc").then(next)
+    },
+    meta: {"tagName":"操作系统"}
+  },
+  {
     name: "v-5ccd84cc",
     path: "/posts/tags/git.html",
     component: GlobalLayout,
@@ -261,6 +279,33 @@ export const routes = [
     meta: {"tagName":"编程语言学习"}
   },
   {
+    name: "v-4d6adad2",
+    path: "/posts/tags/shell 脚本.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-4d6adad2").then(next)
+    },
+    meta: {"tagName":"shell 脚本"}
+  },
+  {
+    name: "v-531d4c54",
+    path: "/posts/tags/设计模式.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-531d4c54").then(next)
+    },
+    meta: {"tagName":"设计模式"}
+  },
+  {
+    name: "v-e37c3508",
+    path: "/posts/tags/WEB前端开发.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-e37c3508").then(next)
+    },
+    meta: {"tagName":"WEB前端开发"}
+  },
+  {
     name: "v-aec5c302",
     path: "/posts/tags/LeetCode.html",
     component: GlobalLayout,
@@ -288,33 +333,6 @@ export const routes = [
     meta: {"tagName":"算法"}
   },
   {
-    name: "v-2076106c",
-    path: "/posts/tags/Linux.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-2076106c").then(next)
-    },
-    meta: {"tagName":"Linux"}
-  },
-  {
-    name: "v-23617cfc",
-    path: "/posts/tags/操作系统.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-23617cfc").then(next)
-    },
-    meta: {"tagName":"操作系统"}
-  },
-  {
-    name: "v-4d6adad2",
-    path: "/posts/tags/shell 脚本.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-4d6adad2").then(next)
-    },
-    meta: {"tagName":"shell 脚本"}
-  },
-  {
     name: "v-08b4753d",
     path: "/posts/tags/编程思维.html",
     component: GlobalLayout,
@@ -331,24 +349,6 @@ export const routes = [
       ensureAsyncComponentsLoaded("Tag", "v-423fec78").then(next)
     },
     meta: {"tagName":"资源共享"}
-  },
-  {
-    name: "v-e37c3508",
-    path: "/posts/tags/WEB前端开发.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-e37c3508").then(next)
-    },
-    meta: {"tagName":"WEB前端开发"}
-  },
-  {
-    name: "v-531d4c54",
-    path: "/posts/tags/设计模式.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-531d4c54").then(next)
-    },
-    meta: {"tagName":"设计模式"}
   },
   {
     path: '*',
