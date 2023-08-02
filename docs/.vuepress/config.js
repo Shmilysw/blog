@@ -191,6 +191,11 @@ module.exports = {
                 link: "https://github.com/Shmilysw",
                 exact: false,
             },
+            {
+                text: "Algorithm",
+                link: "https://shmilysw.github.io/algorithm",
+                exact: false,
+            },
             // {
             //     text: "notef",
             //     link: "https://notef.vercel.app/",

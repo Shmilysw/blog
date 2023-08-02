@@ -62,7 +62,7 @@ C#(**.Net6** + **Sql sugar** + **JWT**)
  <!-- 只能说很菜，但还是无欲无求，不知道干嘛，丝毫不慌，但要保持微笑，~~心态好~~，哈哈haha~ -->
 
 + #### 大四上：
-    - 实习：浙江大学台州研究院
+    - 实习：研究院
     - 学习方向：机器视觉、软件开发、数据分析
 
 
@@ -74,13 +74,16 @@ C#(**.Net6** + **Sql sugar** + **JWT**)
 <center>
     <b><font size='5px'>Always try to improve myself！</font></b>
 </center>
+<center>
+    <b><font size='5px'> You got to put the past behind you before you can move on. </font></b>
+</center>
 
 ---
 
+<!-- 
 <center>
     <b><font size='4px'>笼 - 张碧晨</font></b>
 </center>
-
 
 `歌词编辑器：lrc.opqnext.com/`
 
@@ -123,4 +126,4 @@ C#(**.Net6** + **Sql sugar** + **JWT**)
 [03:59.83]越追问 越无解
 [04:03.81]哪有答案 不过是咒语
 [04:09.08]爱不爱我
-[04:23.30]谁邀你入笼
+[04:23.30]谁邀你入笼 -->
