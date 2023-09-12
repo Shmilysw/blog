@@ -56,23 +56,22 @@ export default {
       "v-7b0524ee"
     ]
   },
-  "shell 脚本": {
-    "path": "/posts/tags/shell 脚本.html",
-    "pageKeys": [
-      "v-6ef7186e"
-    ]
-  },
-  "设计模式": {
-    "path": "/posts/tags/设计模式.html",
-    "pageKeys": [
-      "v-0d890a3b",
-      "v-b2a94cee"
-    ]
-  },
   "WEB前端开发": {
     "path": "/posts/tags/WEB前端开发.html",
     "pageKeys": [
       "v-f01ebae2"
+    ]
+  },
+  "OCR": {
+    "path": "/posts/tags/OCR.html",
+    "pageKeys": [
+      "v-437a78b8"
+    ]
+  },
+  "图像识别": {
+    "path": "/posts/tags/图像识别.html",
+    "pageKeys": [
+      "v-437a78b8"
     ]
   },
   "编程思维": {
@@ -85,6 +84,19 @@ export default {
     "path": "/posts/tags/资源共享.html",
     "pageKeys": [
       "v-2f6b44b6"
+    ]
+  },
+  "shell 脚本": {
+    "path": "/posts/tags/shell 脚本.html",
+    "pageKeys": [
+      "v-6ef7186e"
+    ]
+  },
+  "设计模式": {
+    "path": "/posts/tags/设计模式.html",
+    "pageKeys": [
+      "v-b2a94cee",
+      "v-0d890a3b"
     ]
   }
 }

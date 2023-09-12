@@ -21,6 +21,18 @@ export const routes = [
     redirect: "/Projects/"
   },
   {
+    name: "v-b2754d56",
+    path: "/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Home", "v-b2754d56").then(next)
+    },
+  },
+  {
+    path: "/index.html",
+    redirect: "/"
+  },
+  {
     name: "v-be505a2e",
     path: "/posts/2023/03/25/git-github%E5%85%A5%E9%97%A8.html",
     component: GlobalLayout,
@@ -85,16 +97,52 @@ export const routes = [
     redirect: "/posts/2022/10/18/%E6%B5%85%E5%AD%A6javascript.html"
   },
   {
-    name: "v-b2754d56",
-    path: "/",
+    name: "v-f01ebae2",
+    path: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Home", "v-b2754d56").then(next)
+      ensureAsyncComponentsLoaded("Post", "v-f01ebae2").then(next)
     },
   },
   {
-    path: "/index.html",
-    redirect: "/"
+    path: "/posts/2023/07/16/web前端-事件循环.html",
+    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
+  },
+  {
+    path: "/_posts/WEB/WEB前端-事件循环.html",
+    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
+  },
+  {
+    name: "v-437a78b8",
+    path: "/posts/2023/09/04/%E9%93%B6%E8%A1%8C%E5%8D%A1%E8%AF%86%E5%88%AB.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-437a78b8").then(next)
+    },
+  },
+  {
+    path: "/posts/2023/09/04/银行卡识别.html",
+    redirect: "/posts/2023/09/04/%E9%93%B6%E8%A1%8C%E5%8D%A1%E8%AF%86%E5%88%AB.html"
+  },
+  {
+    path: "/_posts/Python/银行卡识别.html",
+    redirect: "/posts/2023/09/04/%E9%93%B6%E8%A1%8C%E5%8D%A1%E8%AF%86%E5%88%AB.html"
+  },
+  {
+    name: "v-2f6b44b6",
+    path: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-2f6b44b6").then(next)
+    },
+  },
+  {
+    path: "/posts/2023/07/06/动态链接库dll.html",
+    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
+  },
+  {
+    path: "/_posts/编程思维/动态链接库DLL.html",
+    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
   },
   {
     name: "v-6ef7186e",
@@ -111,6 +159,22 @@ export const routes = [
   {
     path: "/_posts/Linux/shell/00shell基础语法_Bash.html",
     redirect: "/posts/2023/04/29/_00shell%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-bash.html"
+  },
+  {
+    name: "v-b2a94cee",
+    path: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-b2a94cee").then(next)
+    },
+  },
+  {
+    path: "/posts/2023/05/06/微服务架构-马丁弗勒.html",
+    redirect: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html"
+  },
+  {
+    path: "/_posts/设计模式/微服务架构-马丁弗勒.html",
+    redirect: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html"
   },
   {
     name: "v-0d890a3b",
@@ -139,54 +203,6 @@ export const routes = [
   {
     path: "/about/index.html",
     redirect: "/about/"
-  },
-  {
-    name: "v-f01ebae2",
-    path: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-f01ebae2").then(next)
-    },
-  },
-  {
-    path: "/posts/2023/07/16/web前端-事件循环.html",
-    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
-  },
-  {
-    path: "/_posts/WEB/WEB前端-事件循环.html",
-    redirect: "/posts/2023/07/16/web%E5%89%8D%E7%AB%AF-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html"
-  },
-  {
-    name: "v-b2a94cee",
-    path: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-b2a94cee").then(next)
-    },
-  },
-  {
-    path: "/posts/2023/05/06/微服务架构-马丁弗勒.html",
-    redirect: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html"
-  },
-  {
-    path: "/_posts/设计模式/微服务架构-马丁弗勒.html",
-    redirect: "/posts/2023/05/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84-%E9%A9%AC%E4%B8%81%E5%BC%97%E5%8B%92.html"
-  },
-  {
-    name: "v-2f6b44b6",
-    path: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-2f6b44b6").then(next)
-    },
-  },
-  {
-    path: "/posts/2023/07/06/动态链接库dll.html",
-    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
-  },
-  {
-    path: "/_posts/编程思维/动态链接库DLL.html",
-    redirect: "/posts/2023/07/06/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93dll.html"
   },
   {
     name: "v-1f814451",
@@ -306,24 +322,6 @@ export const routes = [
     meta: {"tagName":"编程语言学习"}
   },
   {
-    name: "v-4d6adad2",
-    path: "/posts/tags/shell 脚本.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-4d6adad2").then(next)
-    },
-    meta: {"tagName":"shell 脚本"}
-  },
-  {
-    name: "v-531d4c54",
-    path: "/posts/tags/设计模式.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-531d4c54").then(next)
-    },
-    meta: {"tagName":"设计模式"}
-  },
-  {
     name: "v-e37c3508",
     path: "/posts/tags/WEB前端开发.html",
     component: GlobalLayout,
@@ -331,6 +329,24 @@ export const routes = [
       ensureAsyncComponentsLoaded("Tag", "v-e37c3508").then(next)
     },
     meta: {"tagName":"WEB前端开发"}
+  },
+  {
+    name: "v-e90081c0",
+    path: "/posts/tags/OCR.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-e90081c0").then(next)
+    },
+    meta: {"tagName":"OCR"}
+  },
+  {
+    name: "v-1b43c396",
+    path: "/posts/tags/图像识别.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-1b43c396").then(next)
+    },
+    meta: {"tagName":"图像识别"}
   },
   {
     name: "v-08b4753d",
@@ -349,6 +365,24 @@ export const routes = [
       ensureAsyncComponentsLoaded("Tag", "v-423fec78").then(next)
     },
     meta: {"tagName":"资源共享"}
+  },
+  {
+    name: "v-4d6adad2",
+    path: "/posts/tags/shell 脚本.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-4d6adad2").then(next)
+    },
+    meta: {"tagName":"shell 脚本"}
+  },
+  {
+    name: "v-531d4c54",
+    path: "/posts/tags/设计模式.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-531d4c54").then(next)
+    },
+    meta: {"tagName":"设计模式"}
   },
   {
     path: '*',

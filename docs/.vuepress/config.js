@@ -216,7 +216,7 @@ module.exports = {
             organization: "Tai'Zhou University",
             // avatar: "https://cdn.acwing.com/media/article/image/2022/11/26/101476_52a1364c6d-1.jpg",
             // https://cdn.acwing.com/media/user/profile/photo/120382_lg_2ec963416b.jpg
-            avatar: "https://cdn.acwing.com/media/user/profile/photo/120382_lg_2ec963416b.jpg",
+            avatar: "https://cdn.acwing.com/media/user/profile/photo/120382_lg_41120c9c4d.png",
             sns: {
                 // github: {
                 //     account: "Shmilysw",
